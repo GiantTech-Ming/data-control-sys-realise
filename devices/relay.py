@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # devices/relay.py
 # 继电器控制模块
 

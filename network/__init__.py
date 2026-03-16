@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # network/__init__.py
 # 网络通信模块初始化
 from flask import Flask, render_template

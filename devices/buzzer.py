@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # devices/buzzer.py
 # 蜂鸣器控制模块
 

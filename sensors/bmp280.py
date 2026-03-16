@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # sensors/bmp280.py
 # 气压传感器模块
 

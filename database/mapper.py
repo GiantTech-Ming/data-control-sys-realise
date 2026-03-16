@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from database.SqlUtil import execute
 from datetime import datetime
 

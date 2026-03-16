@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from database.mapper import insert_env_data
 from . import app
 from flask import jsonify

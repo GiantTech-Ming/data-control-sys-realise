@@ -1,5 +1,5 @@
 # control/irrigation.py
-# 自动灌溉逻辑模块
+
 
 class Irrigation:
     def control(self, soil_moisture):
