@@ -1,13 +1,23 @@
+from database.mapper import insert_env_data
 from . import app
 from flask import jsonify
 import random
 
+def read_sensor():
+    temperature = round(random.uniform(20,30),2)
+    humidity = round(random.uniform(40,70),2)
+
+    # 写入数据库
+    insert_env_data(temperature, humidity)
+    return temperature, humidity
+
 # 温湿度
 @app.route("/chart")
 def chart():
+    temperature, humidity = read_sensor()
     return jsonify({
-        "temperature": round(random.uniform(20,30),2),
-        "humidity": round(random.uniform(40,70),2)
+        "temperature": temperature,
+        "humidity": humidity
     })
 
 

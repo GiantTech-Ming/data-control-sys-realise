@@ -1,10 +1,14 @@
 # database/__init__.py
 # 数据库模块初始化
 import pymysql
-
-db = pymysql.connect(
-    host="localhost",
-    user="root",
-    password="你的密码",
-    database="farm_iot"
-)
+db = None
+def init_db():
+    global db
+    db = pymysql.connect(
+        host="192.168.88.226",
+        port=3306,
+        user="farm",
+        password="123456",
+        database="farm_iot",
+    )
+    print("MariaDB connected")

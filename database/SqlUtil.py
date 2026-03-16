@@ -1,22 +1,22 @@
 from database import db
 
-from database import db
-
-def doSqlWork(statement, entity=None):
+def execute(sql, params=None):
     cursor = db.cursor()
 
-    try:
-        cursor.execute(statement, entity)
+    if params:
+        cursor.execute(sql, params)
+    else:
+        cursor.execute(sql)
 
-        if statement.strip().upper().startswith("SELECT"):
-            result = cursor.fetchall()
-            return result
+    db.commit()
+    cursor.close()
 
-        db.commit()
 
-    except Exception as e:
-        print("SQL执行失败:", e)
-        db.rollback()
+def query(sql):
+    cursor = db.cursor()
+    cursor.execute(sql)
 
-    finally:
-        cursor.close()
+    result = cursor.fetchall()
+
+    cursor.close()
+    return result
