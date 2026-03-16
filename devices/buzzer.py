@@ -38,9 +38,9 @@ def destroy():
 	GPIO.output(BuzzerPin, GPIO.HIGH)
 	GPIO.cleanup()                     # Release resource
 
-# if __name__ == '__main__':     # Program start from here
-# 	setup(Buzzer)
-# 	try:
-# 		loop()
-# 	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
-# 		destroy()
+if __name__ == '__main__':     # Program start from here
+	setup(Buzzer)
+	try:
+		loop()
+	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
+		destroy()
