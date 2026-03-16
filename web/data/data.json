@@ -1,8 +1,0 @@
-{
-  "temperature": 26,
-  "humidity": 65,
-  "motor": true,
-  "buzzer": false,
-  "status": "土壤湿度正常",
-  "suggest": "当前环境适合农作物生长"
-}
