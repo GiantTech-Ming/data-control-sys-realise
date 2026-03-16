@@ -2,15 +2,17 @@
 from database import db
 
 def execute(sql, params=None):
+    global db
     cursor = db.cursor()
-
+    if db is None:
+        raise Exception("数据库未初始化！请先调用 init_db()")
     if params:
         cursor.execute(sql, params)
     else:
         cursor.execute(sql)
 
     db.commit()
-    cursor.close()
+    return cursor
 
 
 def query(sql):

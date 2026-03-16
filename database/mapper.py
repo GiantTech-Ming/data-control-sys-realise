@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from database.SqlUtil import execute
+from .SqlUtil import execute
 from datetime import datetime
-from database import db
-
 
 def insert_env_data(temperature, humidity):
 
