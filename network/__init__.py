@@ -26,6 +26,5 @@ def setting():
     return render_template("setting.html", username= username)
 
 
-
 # 导入 API
 from . import dth11_flask
