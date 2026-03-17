@@ -6,7 +6,7 @@ class Predict:
         self.SECRET_KEY = 'dYa8S0oFYY19M8hF1TSzxUP35AOJsDGj'
         self.client = AipImageClassify(self.APP_ID, self.API_KEY, self.SECRET_KEY)
         
-        # 定义你关心的“白名单”害虫
+      
         self.target_pests = ["瓢虫", "螳螂", "天牛"]
 
     def analyze(self):
