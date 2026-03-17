@@ -15,3 +15,12 @@ def insert_env_data(temperature, humidity):
         humidity,
         datetime.now()
     ))
+
+def select_user(username, password):
+    sql = """
+    SELECT * FROM user
+    WHERE username = %s AND password = %s
+    """
+    execute(sql, (
+        username, password
+    ))

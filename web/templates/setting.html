@@ -42,8 +42,30 @@
                 </a>
             </div>
             <div class="header-right">
-                <!--TODO:左边删掉了-->
+                <div class="serch-wrapper">
+                    <form>
+                        <input type="text" placeholder="Search Here...">
+                    </form>
+                    <a class="search-close" href="javascript:void(0);"><span class="icofont-close-line"></span></a>
+                </div>
                 <div class="header-left">
+                    <div class="header-links">
+                        <a href="javascript:void(0);" class="toggle-btn">
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="header-links search-link">
+                        <a class="search-toggle" href="javascript:void(0);">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 x="0px" y="0px" viewbox="0 0 56.966 56.966"
+                                 style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                    s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+                                </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="header-controls">
                     <div class="notification-wrapper header-links">
@@ -117,6 +139,58 @@
         <div class="side-menu-wrap">
             <ul class="main-menu">
                 <li>
+                    <a href="javascript:void(0);" class="active">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-home"><path
+                                        d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline
+                                        points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            </span>
+                        <span class="menu-text">
+                                Dashboard
+                            </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                    <span class="icon-dash">
+                                    </span>
+                                <span class="menu-text">
+                                        Admin
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                <span class="menu-text">
+                                        User
+                                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="all-product.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4"
+                                                                                                   x2="7.5"
+                                                                                                   y2="4.21"></line><path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline
+                                        points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08"
+                                                                                                x2="12" y2="12"></line></svg>
+                            </span>
+                        <span class="menu-text">
+                                Products
+                            </span>
+                    </a>
+                </li>
+                <li>
                     <a href="orders.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
@@ -133,7 +207,23 @@
                     </a>
                 </li>
                 <li>
-                    <a href="chart.html">
+                    <a href="customers.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-users"><path
+                                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7"
+                                                                                                     r="4"></circle><path
+                                        d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path
+                                        d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </span>
+                        <span class="menu-text">
+                                Customers
+                            </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="/chart_page">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                                      stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -142,9 +232,35 @@
                                         d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
                             </span>
                         <span class="menu-text">
-                                Chart
+                                数据分析
                             </span>
                     </a>
+                </li>
+
+                <li class="active-li">
+                    <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-layers"><polygon
+                                        points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline
+                                        points="2 17 12 22 22 17"></polyline><polyline
+                                        points="2 12 12 17 22 12"></polyline></svg>
+                            </span>
+                        <span class="menu-text">
+                                General
+                            </span>
+                    </a>
+                    <ul class="sub-menu show-submenu">
+                        <a href="shop.html">
+                                    <span class="icon-dash">
+                                    </span>
+                            <span class="menu-text">
+                                        Shop
+                                    </span>
+                        </a>
+
+                    </ul>
                 </li>
 
             </ul>
@@ -152,69 +268,125 @@
     </aside>
     <!-- Container Start -->
     <div class="page-wrapper">
-       <div class="main-content">
+        <div class="main-content">
                 <!-- Page Title Start -->
                 <div class="row">
-                    <div class="colxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="col xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-title-wrapper">
                             <div class="page-title-box">
-                                <h4 class="page-title bold">Charts</h4>
+                                <h4 class="page-title">Setting</h4>
                             </div>
                             <div class="breadcrumb-list">
                                 <ul>
                                     <li class="breadcrumb-link">
-                                        <a href="javascript:void(0);"><i class="fas fa-home mr-2"></i>Home</a>
+                                        <a href="javascript:void(0);"><i class="fas fa-home mr-2"></i>Dashboard</a>
                                     </li>
-                                    <li class="breadcrumb-link active">Chart</li>
+                                    <li class="breadcrumb-link active">Setting</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Chart Start -->
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <!-- Basic Area Chart -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h4>农田状态数据分析</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-holder">
-                                    <div id="chartA"></div>
-                                </div>
-                            </div>
+                <!-- Products view Start -->
+				<div class="row">
+
+                <div class="col-xl-12">
+                  <form class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Company Name</label>
+                            <input class="form-control" type="text" placeholder="Enter Name" data-bs-original-title="" title="">
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <!-- Area Spaline Chart -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h4>害虫数据分析</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-holder">
-                                    <div id="chartB"></div>
-                                </div>
-                            </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Contact Person</label>
+                            <input class="form-control" type="text" placeholder="Enter Name" data-bs-original-title="" title="">
+                          </div>
                         </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input class="form-control" type="text" placeholder="Enter address" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Germany</option>
+                              <option value="2">Canada</option>
+                              <option value="3">Usa</option>
+                              <option value="4">Aus</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input class="form-control" type="text" placeholder="City" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+						<div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">State/Province</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">California</option>
+                              <option value="2">Alaska</option>
+                              <option value="3">Alabama</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input class="form-control" type="text" placeholder="ZIP Code" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+						<div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" placeholder="Enter Email" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input class="form-control" type="text" placeholder="Enter Number" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+						<div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            <input class="form-control" type="text" placeholder="Enter Number" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+						<div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Fax</label>
+                            <input class="form-control" type="text" placeholder="818 22 0011" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+						<div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Website Url</label>
+                            <input class="form-control" type="text" placeholder="Enter Url" data-bs-original-title="" title="">
+                          </div>
+                        </div>
+                      </div>
+					  <button class="btn btn-primary squer-btn" type="submit" data-bs-original-title="" title="">save</button>
                     </div>
+                  </form>
                 </div>
-                <div class="row">
-<!--                    TODO:温湿度表-->
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h4>温湿度折线图</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-holder">
-                                    <div id="chartT"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+			  <div class="ad-footer-btm">
+					<p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				</div>
             </div>
     </div>
 </div>
@@ -360,216 +532,6 @@
 <script src="../static/js/nice-select.min.js"></script>
 <!-- Custom Script -->
 <script src="../static/js/custom.js"></script>
-<!--TODO:加载温湿度数据(模拟)-->
-<script>
-var tempData = []
-var humData = []
-var timeData = []
-var options = {
-    chart: {
-        type: 'line',
-        height: 350
-    },
-
-    series: [
-        {
-            name: "Temperature",
-            data: tempData
-        },
-        {
-            name: "Humidity",
-            data: humData
-        }
-    ],
-
-    xaxis: {
-        categories: timeData
-    },
-
-    stroke: {
-        curve: 'smooth'
-    }
-}
-var chart = new ApexCharts(
-    document.querySelector("#chartT"),
-    options
-)
-
-chart.render()
-
-</script>
-<script>
-
-setInterval(function(){
-
-fetch("/chart")
-.then(res => res.json())
-.then(data => {
-
-    var now = new Date().toLocaleTimeString()
-
-    tempData.push(data.temperature)
-    humData.push(data.humidity)
-    timeData.push(now)
-
-    if(tempData.length > 20){
-        tempData.shift()
-        humData.shift()
-        timeData.shift()
-    }
-
-    chart.updateOptions({
-        xaxis: {
-            categories: timeData
-        }
-    })
-
-    chart.updateSeries([
-        {
-            name:"Temperature",
-            data: tempData
-        },
-        {
-            name:"Humidity",
-            data: humData
-        }
-    ])
-
-})
-
-},2000)
-
-</script>
-<!--TODO:加载温湿度数据(模拟)-->
-
-<!--TODO:加载农田和害虫分析图-->
-<script>
-
-var farmChart = new ApexCharts(
-document.querySelector("#chartA"),
-{
-    chart:{
-        type:"area",
-        height:350
-    },
-    series:[
-        { name:"Soil Moisture", data:[] },
-        { name:"Light", data:[] },
-        { name:"PH", data:[] }
-    ],
-    xaxis:{
-        categories:[]
-    },
-    stroke:{
-        curve:'smooth'
-    }
-})
-
-farmChart.render()
-
-</script>
-<script>
-
-var pestChart = new ApexCharts(
-document.querySelector("#chartB"),
-{
-    chart:{
-        type:"area",
-        height:350
-    },
-    series:[
-        { name:"Aphid", data:[] },
-        { name:"Armyworm", data:[] },
-        { name:"Beetle", data:[] }
-    ],
-    xaxis:{
-        categories:[]
-    },
-    stroke:{
-        curve:'smooth'
-    }
-})
-
-pestChart.render()
-
-</script>
-<!--AJAX-->
-<script>
-
-var timeData = []
-var soilData=[]
-var lightData=[]
-var phData=[]
-
-var aphidData=[]
-var armywormData=[]
-var beetleData=[]
-
-
-setInterval(function(){
-
-var now = new Date().toLocaleTimeString()
-timeData.push(now)
-
-if(timeData.length>20){
-    timeData.shift()
-    soilData.shift()
-    lightData.shift()
-    phData.shift()
-
-    aphidData.shift()
-    armywormData.shift()
-    beetleData.shift()
-}
-
-
-// 农田数据
-fetch("/farm")
-.then(res=>res.json())
-.then(data=>{
-
-soilData.push(data.soil)
-lightData.push(data.light)
-phData.push(data.ph)
-
-farmChart.updateOptions({
-    xaxis:{categories:timeData}
-})
-
-farmChart.updateSeries([
-    {name:"Soil Moisture",data:soilData},
-    {name:"Light",data:lightData},
-    {name:"PH",data:phData}
-])
-
-})
-
-
-// 害虫数据
-fetch("/pest")
-.then(res=>res.json())
-.then(data=>{
-
-aphidData.push(data.aphid)
-armywormData.push(data.armyworm)
-beetleData.push(data.beetle)
-
-pestChart.updateOptions({
-    xaxis:{categories:timeData}
-})
-
-pestChart.updateSeries([
-    {name:"Aphid",data:aphidData},
-    {name:"Armyworm",data:armywormData},
-    {name:"Beetle",data:beetleData}
-])
-
-})
-
-},3000)
-
-</script>
-<!--TODO:加载农田和害虫分析图-->
 </body>
 
 </html>

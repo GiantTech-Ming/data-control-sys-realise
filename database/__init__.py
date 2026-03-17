@@ -14,5 +14,5 @@ def init_db():
             database="farm_iot",
             charset="utf8mb4"
         )
-    print("MariaDB connected")
+        print("MariaDB connected")
     return db
